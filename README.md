@@ -13,7 +13,7 @@ This project provides a simple and interactive **Gradio web UI** for generating 
 ![xl0_1](https://github.com/user-attachments/assets/58ca167f-3946-477c-afa3-762d5010ec12)
 ---
 
-## 🚀 Features
+##  Features
 
 -  Generate images from custom text prompts
 -  Choose between two powerful models: **SD 1.5** or **SDXL 1.0**
@@ -24,7 +24,7 @@ This project provides a simple and interactive **Gradio web UI** for generating 
 ---
 
 
-## 🧪 Technologies Used
+##  Technologies Used
 
 - [🤗 HuggingFace Diffusers](https://huggingface.co/docs/diffusers/index)
 - [Gradio](https://gradio.app)
@@ -34,20 +34,20 @@ This project provides a simple and interactive **Gradio web UI** for generating 
 
 ---
 
-## 🧠 Supported Models
+##  Supported Models
 
 | Model Name | Description |
 |------------|-------------|
 | **Stable Diffusion v1.5** | Lightweight and fast, great for general-purpose generations. |
 | **Stable Diffusion XL 1.0** | More accurate, photorealistic images, but heavier on GPU usage. |
 
-> ℹ️ **Default behavior:**  
+>  **Default behavior:**  
 > - If **no model** is explicitly selected, the app **automatically uses SD v1.5**  
 > - The **default CFG value** is set to `8.0`, which is a balanced value for most prompts.
 
 ---
 
-## 📦 Installation
+##  Installation
 
 1. Clone the repository:
 
@@ -62,7 +62,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-## ✏️ Usage
+##  Usage
 Enter your prompt (e.g., A futuristic city at sunset)
 
 Optionally, enter a negative prompt (e.g., blurry, distorted, extra limbs)
@@ -73,7 +73,7 @@ Click on a model button (SD1.5 or SDXL) to select your model
 
 Click Generate to create the image
 
-## 🧪 Example Prompt 
+## Example Prompt 
 Prompt:
 A majestic cyberpunk city at night, glowing neon lights, futuristic buildings, flying cars, rainy street reflections, ultra-detailed, cinematic lighting
 
@@ -83,13 +83,13 @@ blurry, distorted, low resolution, extra limbs, bad anatomy, deformed, oversatur
 CFG: 8.0
 
 
-## ⚠️ Notes
+## Notes
 Make sure you have CUDA-enabled GPU for inference (especially for SDXL)
 
 On CPU-only environments like Hugging Face Spaces (without GPU), image generation will fail
 
 
-## ✨ Credits
+## Credits
 [StabilityAI - SD & SDXL Models]([https://gradio.app](https://huggingface.co/stabilityai))
 
 [Hugging Face Diffusers]([https://gradio.app](https://github.com/huggingface/diffusers))
