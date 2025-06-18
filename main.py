@@ -2,14 +2,11 @@ from diffusers import StableDiffusionPipeline, DiffusionPipeline
 import matplotlib.pyplot as plt
 import gradio as gr
 import torch, gc
-
 ################################################ SD1.5
 pipe_sd1_5  = StableDiffusionPipeline.from_pretrained(
     "sd-legacy/stable-diffusion-v1-5",
     torch_dtype=torch.float16
 )
-
-
 ################################################# SDXL
 gc.collect()
 torch.cuda.empty_cache()
@@ -29,8 +26,6 @@ refiner = DiffusionPipeline.from_pretrained(
     use_safetensors=True,
     variant="fp16",
 )
-
-
 ################################################
 def generate_image(prompt, negative_propt="", CFG=8.0, width=512, height=512, sd1_5_model=True):
     gc.collect()
@@ -56,7 +51,6 @@ def generate_image(prompt, negative_propt="", CFG=8.0, width=512, height=512, sd
     cfg_value = f"CFG: {CFG}"
 
     return image, model_name, cfg_value, width, height
-
 
 ###########################
 with gr.Blocks() as demo:
