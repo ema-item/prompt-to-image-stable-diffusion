@@ -7,10 +7,10 @@ This project provides a simple and interactive **Gradio web UI** for generating 
 ## 📷 Demo Preview
 
 ### 🔹 Stable Diffusion v1.5 (CFG=8)
-![sd1_5](https://github.com/user-attachments/assets/88607794-367a-48f2-aae5-9056f0ab7e9b)
+![sd](https://github.com/user-attachments/assets/8f24efa4-0923-48a2-a0aa-2453b22f5989)
 
 ### 🔸 Stable Diffusion XL 1.0 (CFG=8)
-![xl0_1](https://github.com/user-attachments/assets/58ca167f-3946-477c-afa3-762d5010ec12)
+![xl](https://github.com/user-attachments/assets/9328ee7e-f79f-48dd-89c1-c9569a18fba1)
 ---
 
 ##  Features
@@ -44,6 +44,16 @@ This project provides a simple and interactive **Gradio web UI** for generating 
 >  **Default behavior:**  
 > - If **no model** is explicitly selected, the app **automatically uses SD v1.5**  
 > - The **default CFG value** is set to `8.0`, which is a balanced value for most prompts.
+
+---
+
+## Image Resolution Support
+Users can choose the desired image size by specifying custom width and height values (e.g., 256 x 256, 512 x 640, 704 x 576, etc.).
+
+### Default behavior:
+If no resolution is specified by the user, the system will automatically use 512 x 512 as the default size.
+
+### Note: Very large sizes may require significant GPU memory and can lead to OOM (Out of Memory) errors on limited hardware.
 
 ---
 
