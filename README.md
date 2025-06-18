@@ -83,15 +83,7 @@ Click on a model button (SD1.5 or SDXL) to select your model
 
 Click Generate to create the image
 
-## Example Prompt 
-Prompt:
-A majestic cyberpunk city at night, glowing neon lights, futuristic buildings, flying cars, rainy street reflections, ultra-detailed, cinematic lighting
-
-Negative Prompt (Optional):
-blurry, distorted, low resolution, extra limbs, bad anatomy, deformed, oversaturated
-
-CFG: 8.0
-
+---
 
 ## Notes !!
 Make sure you have CUDA-enabled GPU for inference (especially for SDXL)
