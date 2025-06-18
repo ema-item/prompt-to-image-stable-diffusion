@@ -53,7 +53,7 @@ Users can choose the desired image size by specifying custom width and height va
 ### Default behavior:
 If no resolution is specified by the user, the system will automatically use 512 x 512 as the default size.
 
-### Note: Very large sizes may require significant GPU memory and can lead to OOM (Out of Memory) errors on limited hardware.
+### Note !!: Very large sizes may require significant GPU memory and can lead to OOM (Out of Memory) errors on limited hardware.
 
 ---
 
@@ -93,7 +93,7 @@ blurry, distorted, low resolution, extra limbs, bad anatomy, deformed, oversatur
 CFG: 8.0
 
 
-## Notes
+## Notes !!
 Make sure you have CUDA-enabled GPU for inference (especially for SDXL)
 
 On CPU-only environments like Hugging Face Spaces (without GPU), image generation will fail
